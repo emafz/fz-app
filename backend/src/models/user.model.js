@@ -1,11 +1,12 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
+
     nombre: {
         type: String,
         required: true
     },
-    
+
     apellido: {
         type: String,
         required: true
@@ -41,19 +42,23 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    codigoPostal: {
-        type: String,
-        required: true
-    },
+
     localidad: {
         type: String,
         required: true
     },
+
     provincia: {
         type: String,
         required: true
     },
+
     pais: {
+        type: String,
+        required: true
+    },
+
+    codigoPostal: {
         type: String,
         required: true
     }

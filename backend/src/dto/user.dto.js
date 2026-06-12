@@ -1,5 +1,7 @@
 import Joi from "joi";
 
+
+//METODO GET
 const createUserSchema = Joi.object({
     nombre: Joi.string()
         .trim()
@@ -76,6 +78,8 @@ const createUserSchema = Joi.object({
 
 })
 
+
+//METODO POST
 const updateUserSchema = Joi.object({
     nombre: Joi.string()
         .trim()
